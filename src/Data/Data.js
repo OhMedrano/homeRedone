@@ -118,46 +118,55 @@ var data = {
             /* Projects */
             "projects": [
                 {
-                  "projectType": "work projects",
+                  "projectType": "work",
                   "projects": [
                 
                   {
-                    "name": "Guitar Tools",
-                    "url":"http://guitar.thebigoh.net",
-                    "framework":"AngularJS (1.x)",
-                    "purpose": [
-                      "Wanted to help guitarist find their way around the fretboard with music theory",
-                      "Added a \"Lefty\" mode for lefty guitarist after popular demand",
-                      "Made with \"Responsive Design\" in mind, so you can use it on any device."
-                    ],
-                    "projectImage": "https://i.imgur.com/b4bmsg2.png?1",
+                    "name": "David Yurman",
+                    "url":"https://www.davidyurman.com/stores",
+                    "code": "davidyurman"
                   },
                   {
-                    "name": "React PokeDex",
-                    "url":"http://reactpoke.thebigoh.net",
-                    "framework":"ReactJS",
-                    "purpose": [
-                      "A pokeDex made in ReactJS",
-                      "Wanted to create one that looks like it came from one of the games",
-                      "Designed all graphic assets in Adobe Illustrator",
-                    ],
-                    "projectImage": "https://i.imgur.com/7UGoStl.png?1",
+                    "name": "West Elm - Workspaces -",
+                    "url":"http://locations.westelmworkspace.com/?",
+                    "code": "westelm"
                   },
                   {
-                    "name": "AtaByte Hosting",
-                    "url":"http://jared2.thebigoh.net",
-                    "framework":"AngularJS (1.x)",
-                    "purpose": [
-                      "A redesign of a AtaByte Hosting",
-                      "Responsive design makes it ready to be viewed on any device",
-                      "Parallax effect"
-                    ],
-                    "projectImage": "https://i.imgur.com/jkVu7mh.jpg?1",
+                    "name": "Kate Spade",
+                    "url":"https://www.katespade.com/stores?",
+                    "code": "katespade"
                   },
-                               
-                               
+                  {
+                    "name": "Modells",
+                    "url":"https://stores.modells.com/",
+                    "code": "modells"
+                  },
+                  {
+                    "name": "Uggs",
+                    "url":"https://www.ugg.com/stores/",
+                    "code": "uggs"
+                  },
+                  {
+                    "name": "Chicos - Off The Rack -",
+                    "url":"https://stores.chicosofftherack.com/?",
+                    "code": "chicosofftherack"
+                  },
+                  {
+                    "name": "Saks Fifth Avenue",
+                    "url":"https://www.saksfifthavenue.com/locations/?",
+                    "code": "saks"
+                  },
 
-                
+                  {
+                    "name": "SOMA",
+                    "url":"https://stores.soma.com/?",
+                    "code": "soma"
+                  },   
+                                    {
+                    "name": "Motherhood",
+                    "url":"https://stores.motherhood.com/?",
+                    "code": "soma"
+                  },                
                   ],
 
 
@@ -165,46 +174,37 @@ var data = {
 
                 },
                 {
-              "projectType": "side projects",
-              "projects": [
-            
-              {
-                "name": "Guitar Tools",
-                "url":"http://guitar.thebigoh.net",
-                "framework":"AngularJS (1.x)",
-                "purpose": [
-                  "Wanted to help guitarist find their way around the fretboard with music theory",
-                  "Added a \"Lefty\" mode for lefty guitarist after popular demand",
-                  "Made with \"Responsive Design\" in mind, so you can use it on any device."
-                ],
-                "projectImage": "https://i.imgur.com/b4bmsg2.png?1",
-              },
-              {
-                "name": "React PokeDex",
-                "url":"http://reactpoke.thebigoh.net",
-                "framework":"ReactJS",
-                "purpose": [
-                  "A pokeDex made in ReactJS",
-                  "Wanted to create one that looks like it came from one of the games",
-                  "Designed all graphic assets in Adobe Illustrator",
-                ],
-                "projectImage": "https://i.imgur.com/7UGoStl.png?1",
-              },
-              {
-                "name": "AtaByte Hosting",
-                "url":"http://jared2.thebigoh.net",
-                "framework":"AngularJS (1.x)",
-                "purpose": [
-                  "A redesign of a AtaByte Hosting",
-                  "Responsive design makes it ready to be viewed on any device",
-                  "Parallax effect"
-                ],
-                "projectImage": "https://i.imgur.com/jkVu7mh.jpg?1",
-              },
+                  "projectType": "fun",
+                  "projects": [
+                
+                  {
+                    "name": "Guitar Tools",
+                    "url":"http://guitar.thebigoh.net",
+                  
+                    "code":"guitar"
+                  },
+                  {
+                    "name": "React PokeDex",
+                    "url":"http://reactpoke.thebigoh.net",
+                 
+                    "code":"reactdex"
+                  },
+                  {
+                    "name": "AtaByte Hosting",
+                    "url":"http://jared2.thebigoh.net",
+                    "code":"atabyte"
+                  },
+                  {
+                    "name": "React Guitar",
+                    "url":"http://reactguitar.thebigoh.net",
+                    "code": "reactguitar"
+                  },
+                  {
+                    "name": "React Synth",
+                    "url":"http://reactkeys.thebigoh.net",
+                    "code": "reactkeys"
+                  },                                         
                            
-                           
-
-            
               ],
 
 

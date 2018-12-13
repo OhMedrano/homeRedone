@@ -1,9 +1,15 @@
+@import '../settings.scss';
+
+
+
 
 .titleOuterContainer {
   padding: 0;
-  height: 100vh;
+  height: 70vh;
   display: flex;
   flex-direction: column;
+  margin-bottom: 5%;
+
 
   .titleName {
 
@@ -11,7 +17,7 @@
     font-size: 2em;
     .titleNameDiv {
       border-bottom: 5px solid black;
-      font-weight: 800;
+      font-weight: 100;
       margin-bottom: 5px;
     }
 
@@ -26,12 +32,13 @@
     .titleContentText {
 
       font-size: 1.3em;
-
+      margin-bottom: 2%;
       p {
 
         b {
           font-size: 1.5em;
           margin-left: 10px;
+          font-weight: 100;
         }
       }
       p:last-of-type {
@@ -54,6 +61,7 @@
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: center;
+
       .socialLinks {
 
         padding: 1%; 
@@ -74,14 +82,78 @@
           fill: white;
         }
       }
-/*       #socialLink_linkedin {
-        background: url() no-repeat;
-        background-size: 100% 100%;
-      } */
+
+
+      &::after {
+        margin-top: 5%;
+        content: '';
+        width: 60%;
+        border-bottom: 5px solid black;
+      }
+
+
+    }
+  }
+}
+
+
+@media (min-width: 500px) {
+
+  .titleOuterContainer {
+
+    .titleName {
+      font-size: 3em;
+    }
+    .titleContent {
+      .titleContentText {
+        font-size: 1.8em;
+      }
+    }
+    .titleSocialLinkContainer { 
+
+      .socialLinks {
+        width: 10% !important;
+      }
+    }
+  }
+}
+
+
+@media (min-width: 990px) {
+  .titleOuterContainer {
+
+    .titleName {
+      display: flex;
+      flex-direction: column;
+      margin-left: -15%;
+     #titleNameDiv_0 {
+        width: 35%;
+      }
+      #titleNameDiv_1 {
+        width: 45%;
+        padding-left: 10%;
+        float: none;
+      }
+
+
+    }
+
+
+    .titleContentText {
+      width: 50%;
 
 
 
 
     }
+    .titleSocialLinkContainer {
+      width: 20%;
+      float: right;
+      margin-top: 35%;
+      .socialLinks {
+        width: 40% !important;
+      }
+    }
+
   }
 }

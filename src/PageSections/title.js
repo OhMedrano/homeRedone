@@ -9,7 +9,7 @@ const TitlePage = function(PersonInfo) {
   const svgArray = [email,linkedin,github,instagram]
   
 
-  let mainContent = makeEle.createEle('div','titleMainContent',[12,12,12,12],'titleOuterContainer');
+  let mainContent = makeEle.createEle('div','titleMainContent',[12,12,12,12],['titleOuterContainer','bodyContainerItem']);
   let nameTitle = makeEle.createEle('div','titleName',[12,12,12,12],'titleName');
   let bioContent = makeEle.createEle('div','titleContentContainer',[12,12,12,12],'titleContent');
   let bioText = makeEle.createEle('div','titleContentText',[12,12,12,12],['titleContentContent', 'titleContentText']);
@@ -46,7 +46,10 @@ const TitlePage = function(PersonInfo) {
                                   optimization and good design</p>
                           </div>
 
+                          <div class='bioTextContentBottom'>
+                              
 
+                          </div>
 
 
                         </div>

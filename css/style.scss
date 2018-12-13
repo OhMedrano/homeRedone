@@ -5,4 +5,62 @@
 body {
   padding: 0;
   font-family: $mainFont;
+  
+
+  .bodyContain.day_man {
+
+    background: $shade1;
+    color: $shade5 !important;
+
+    svg {
+      fill: $shade5;
+    }
+
+    .projectSwitchButton.active_project {
+      background: $shade5;
+      color: $shade1;
+    }
+    .projectSwitchButton.not_active {
+      background: $shade1;
+      color: $shade5;
+    }
+
+    .projectSwitchContainers a {
+
+      .movableName {
+        background: $shade4;
+        color: $shade1;
+      }
+
+      &:nth-child(even) {
+        .movableName {
+          background: $shade5;
+
+
+        }
+      }
+
+    }
+
+  }
+
+}
+
+
+@media (min-width: 990px) {
+  .bodyContain {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  .bodyContainerItem {
+    max-width: 760px;
+    }
+
+    .titleOuterContainer {
+      max-width: 1000px;
+      height: 85vh;
+    }
+  }
 }
