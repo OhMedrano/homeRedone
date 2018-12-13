@@ -1,0 +1,87 @@
+
+.titleOuterContainer {
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  .titleName {
+
+    padding: 0;
+    font-size: 2em;
+    .titleNameDiv {
+      border-bottom: 5px solid black;
+      font-weight: 800;
+      margin-bottom: 5px;
+    }
+
+    #titleNameDiv_1 {
+      float: right ;
+    }
+  }
+  .titleContent {
+    margin-top: 10%;
+    height: 75%;
+
+    .titleContentText {
+
+      font-size: 1.3em;
+
+      p {
+
+        b {
+          font-size: 1.5em;
+          margin-left: 10px;
+        }
+      }
+      p:last-of-type {
+        width: 68%;
+
+      }
+
+      hr {
+        border: 1px solid black !important;
+        margin: 10px 0 -10px; 
+
+      }
+    }
+
+
+    .titleSocialLinkContainer {
+
+      height: 15%;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      .socialLinks {
+
+        padding: 1%; 
+        width: 15%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 1%;
+
+
+        svg {
+          width: 100%;
+          height: 100%;
+        }
+
+        &:hover {
+          background: black;
+          fill: white;
+        }
+      }
+/*       #socialLink_linkedin {
+        background: url() no-repeat;
+        background-size: 100% 100%;
+      } */
+
+
+
+
+    }
+  }
+}
