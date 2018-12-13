@@ -17,7 +17,7 @@ function RenderSite(){
 
   let date = new Date();
   let hours = date.getHours();
-  let modeChange = (hours > 8 && hours < 13) ? 'day_man' : 'night_man'; // AAAAAaaaaaaaAAAAAhhhh 
+  let modeChange = (hours > 8 && hours < 18) ? 'day_man' : 'night_man'; // AAAAAaaaaaaaAAAAAhhhh 
 
   let makeEle = new MakeElement;
 

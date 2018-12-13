@@ -34,7 +34,14 @@ body {
         color: $shade1;
       }
 
-      &:nth-child(even) {
+      &:nth-child(2n+2) {
+        .movableName {
+          background: $shade7;
+
+
+        }
+      }
+      &:nth-child(3n) {
         .movableName {
           background: $shade5;
 
@@ -79,7 +86,7 @@ body {
         color: $shade1;
       }
 
-      &:nth-child(even) {
+      &:nth-child(2n) {
         .movableName {
           background: $shade5;
 

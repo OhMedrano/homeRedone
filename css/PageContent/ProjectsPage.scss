@@ -143,6 +143,9 @@ box-shadow: 10px 10px 9px -8px rgba(0, 0, 0, 0.75);
 
 
         &:hover {
+          text-decoration: none !important;
+          color: $shade1 !important;
+          font-size: 1.5em;
           .movableName {
             opacity: 0.85;
             left: 0%;
