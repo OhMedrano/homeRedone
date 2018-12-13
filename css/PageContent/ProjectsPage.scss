@@ -112,3 +112,47 @@ box-shadow: 10px 10px 9px -8px rgba(0, 0, 0, 0.75);
     }
   }
 }
+
+
+
+@media (min-width: 990px) {
+
+  .projectsPageContainer {
+
+    #projectSwitchButton {
+      > div:hover {
+        cursor: pointer;
+      }
+
+
+
+    }
+    .projectSwitchContainers {
+      a {
+        width: 48%;
+        overflow: hidden;
+
+        .movableName {
+          height: 100%;
+          position: relative;
+          transition: 0.4s all ease;
+          opacity: 0;
+          left: 100%;
+
+        }
+
+
+        &:hover {
+          .movableName {
+            opacity: 0.85;
+            left: 0%;
+            cursor: pointer;
+          }
+
+        }
+      }
+    }
+  }
+
+
+}

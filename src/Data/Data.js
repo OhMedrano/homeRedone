@@ -163,9 +163,9 @@ var data = {
                     "code": "soma"
                   },   
                                     {
-                    "name": "Motherhood",
+                    "name": "Motherhood Maternity",
                     "url":"https://stores.motherhood.com/?",
-                    "code": "soma"
+                    "code": "motherhood"
                   },                
                   ],
 

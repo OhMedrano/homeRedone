@@ -15,7 +15,9 @@ body {
     svg {
       fill: $shade5;
     }
-
+        .projectSwitchButton {
+          border-bottom: 3px solid $shade5;
+        }
     .projectSwitchButton.active_project {
       background: $shade5;
       color: $shade1;
@@ -43,6 +45,52 @@ body {
     }
 
   }
+    .bodyContain.night_man {
+
+    background: $shade5;
+    color: $shade1 !important;
+    *, hr {
+      border-color: $shade1 !important;
+    }
+    svg {
+      fill: $shade1;
+    }
+
+
+    .titleSocialLinkContainer::after {
+      border-color: $shade1 !important;
+    }
+        .projectSwitchButton {
+          border-bottom: 3px solid $shade1;
+        }
+    .projectSwitchButton.active_project {
+      background: $shade1;
+      color: $shade5;
+    }
+    .projectSwitchButton.not_active {
+      background: $shade5;
+      color: $shade1;
+    }
+
+    .projectSwitchContainers a {
+
+      .movableName {
+        background: $shade4;
+        color: $shade1;
+      }
+
+      &:nth-child(even) {
+        .movableName {
+          background: $shade5;
+
+
+        }
+      }
+
+    }
+
+  }
+
 
 }
 

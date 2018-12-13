@@ -47,7 +47,7 @@
       }
 
       hr {
-        border: 1px solid black !important;
+        border: 1px solid black;
         margin: 10px 0 -10px; 
 
       }
@@ -78,8 +78,7 @@
         }
 
         &:hover {
-          background: black;
-          fill: white;
+        cursor: pointer;
         }
       }
 

@@ -55,7 +55,7 @@ const ProjectPage = function(projectsInfo){
     projectType.projects.forEach((proj, x) => {
       console.log(proj);
 
-      let projectItem = makeEle.createEle('a',`${projectType.projectType}_item_${proj.code}`, [12,5,6,5], 'projects');
+      let projectItem = makeEle.createEle('a',`${projectType.projectType}_item_${proj.code}`, [12,5,6,6], 'projects');
       projectItem.innerHTML = `
             <div class='movableName'>
               <p> ${proj.name}</p>
