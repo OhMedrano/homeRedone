@@ -119,6 +119,13 @@ box-shadow: 10px 10px 9px -8px rgba(0, 0, 0, 0.75);
 
   .projectsPageContainer {
 
+    padding: 2% 25%;
+
+    -webkit-box-shadow: inset 0px 10px 19px -4px rgba(0,0,0,0.48),inset 0px -15px 19px -4px rgba(0,0,0,0.48);
+    -moz-box-shadow: inset 0px 10px 19px -4px rgba(0,0,0,0.48),inset 0px -15px 19px -4px rgba(0,0,0,0.48);
+    box-shadow: inset 0px 10px 19px -4px rgba(0,0,0,0.48),inset 0px -15px 19px -4px rgba(0,0,0,0.48);
+
+
     #projectSwitchButton {
       > div:hover {
         cursor: pointer;

@@ -53,7 +53,7 @@ body {
 
   }
     .bodyContain.night_man {
-
+      padding: 0;
     background: $shade5;
     color: $shade1 !important;
     *, hr {
@@ -64,10 +64,14 @@ body {
     }
 
 
+
     .titleSocialLinkContainer::after {
       border-color: $shade1 !important;
     }
-        .projectSwitchButton {
+    .projectsPageContainer {
+      background: #1B1D20 !important;
+    }
+    .projectSwitchButton {
           border-bottom: 3px solid $shade1;
         }
     .projectSwitchButton.active_project {
@@ -108,10 +112,10 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-  .bodyContainerItem {
+    padding: 0;
+/*   .bodyContainerItem {
     max-width: 760px;
-    }
+    } */
 
     .titleOuterContainer {
       max-width: 1000px;
