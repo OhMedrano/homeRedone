@@ -82,6 +82,9 @@ class GalleryCarousel {
 
 
 
+
+
+
   changePage(pageTurn) {
     let currentPage = this.state.currentPage;
     if(pageTurn) {
@@ -89,26 +92,34 @@ class GalleryCarousel {
         console.log('max page reached');
       } else {
         this.state.currentPage = currentPage + 1;
-        imageSets(this.state.currentPage);
+        this.imageSets(this.state.currentPage);
       }
     } else {
       if((currentPage - 1) < 0) {
         console.log('first page reached');
       } else {
         this.state.currentPage = currentPage - 1;
-        imageSets(this.state.currentPage);
+        this.imageSets(this.state.currentPage);
       }
     }
+    this.rerender();
   }
 
 
+  rerender() {
+    this.renderDiv();
+  }
+
   renderDiv(imageCount, ) {
     console.log(this.state);
-
+    this.imageSets(this.state.currentPage);
     let carouselContainerWithControls = makeEle.createEle('div','carouselWrapper',[12,12,12,12],'carouselWrapper');
 
     let imageControlCount = Array(2).fill(null);
     let imageControl = [];
+
+    let imageContainer = makeEle.createEle('div','imageContainer', null,'imageContainer');
+    let imagesArray = this.state.renderedImages; 
 
     imageControlCount.forEach((ctr, i) => {
 
@@ -116,27 +127,15 @@ class GalleryCarousel {
       leftOrRight.addEventListener('click', (e) => {
          let currentPage = this.state.currentPage;
           if(i == 1) {
-            if((currentPage + 1) > this.state.totalPages ) {
-            console.log('max page reached');
-            } else {
-              this.state.currentPage = currentPage + 1;
-              imageSets(this.state.currentPage);
-            }
+            this.changePage(true)
           } else {
-            if((currentPage - 1) < 0) {
-              console.log('first page reached');
-            } else {
-              this.state.currentPage = currentPage - 1;
-              imageSets(this.state.currentPage);
-            }
-        }
+            this.changePage(false);
+          }
       })
       imageControl.push(leftOrRight);
     })
 
 
-    let imageContainer = makeEle.createEle('div','imageContainer', null,'imageContainer');
-    let imagesArray = this.state.renderedImages; 
 
 
     imagesArray.forEach((image, i) => {
@@ -177,21 +176,8 @@ function GalleryPage(galleryPics) {
         if(Array.isArray(imageResults)){
           loadedState != loadedState;
           let totalPages =  imageResults ? Math.floor(imageResults.length / state.imageCount) : 0;
-          let galleryCarousel = new GalleryCarousel(7, 0, imageResults);
-  
-
-
-          galleryCarousel.imageSets(8)
+          let galleryCarousel = new GalleryCarousel(7, 0, imageResults);        
           galleryPageContainer.append(galleryCarousel.renderDiv());
-
- 
-
-
-
-
-
-
-
         }
 
     })
