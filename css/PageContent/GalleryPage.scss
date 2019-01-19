@@ -1,0 +1,48 @@
+
+
+
+#galleryPageContainer {
+  border: 1px solid black;
+
+  height: 100vh;
+
+  .carouselWrapper {
+    display: flex;
+    height: 100%;
+
+    .imageControls {
+      width: 20%;
+    }
+
+
+     .imageContainer {
+      border: 1px solid black;
+       height: 100%;
+       width: 80%;
+       display: flex;
+       flex-wrap: wrap;
+
+
+       .renderImageContainer {
+
+        height: 50%;
+          .renderImages {
+            background-size: 60% !important;
+            height: 100%;
+            background-position: center !important;
+            width: 100%;
+            transition: all 0.5s ease;
+            
+            &:hover {
+              cursor: pointer;
+              background-size: 100% !important; 
+            }
+          }
+
+       }
+    }
+
+  }
+
+
+}

@@ -50,10 +50,10 @@ const ProjectPage = function(projectsInfo){
     }) */
 
 
-    console.log(projectType);
+  /*  console.log(projectType);*/
 
     projectType.projects.forEach((proj, x) => {
-      console.log(proj);
+  /*    console.log(proj);*/
 
       let projectItem = makeEle.createEle('a',`${projectType.projectType}_item_${proj.code}`, [12,5,6,6], 'projects');
       projectItem.innerHTML = `
