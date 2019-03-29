@@ -25,7 +25,7 @@ const TitlePage = function(PersonInfo) {
 
 
   PersonInfo.contact.forEach((contact,i) => {
-    console.log(contact);
+
     let contactName = contact.name.toString().toLowerCase();
 
     let contactLink = makeEle.createEle('a','socialLink_'+contactName,[6,6,6,6],'socialLinks');

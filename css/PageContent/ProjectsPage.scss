@@ -5,7 +5,15 @@
 .projectsPageContainer {
   display: flex;
   flex-direction: column;
-  padding: 0;
+  padding: 10% 5%;
+
+    -webkit-box-shadow: inset 0px 10px 19px -4px rgba(0,0,0,0.48),inset 0px -15px 19px -4px rgba(0,0,0,0.48);
+    -moz-box-shadow: inset 0px 10px 19px -4px rgba(0,0,0,0.48),inset 0px -15px 19px -4px rgba(0,0,0,0.48);
+    box-shadow: inset 0px 10px 19px -4px rgba(0,0,0,0.48),inset 0px -15px 19px -4px rgba(0,0,0,0.48);
+
+
+
+
     .projectsPageTitle {
       font-size: 1.6em;
 
@@ -21,7 +29,8 @@
 
       font-size: 1.3em;
       text-transform: capitalize;
-
+/*       box-shadow: 6px 16px 10px 0px rgba(0,0,0,0.5); */
+      padding: 0;
       .typeName {
 
         padding: 2%;
@@ -118,6 +127,13 @@ box-shadow: 10px 10px 9px -8px rgba(0, 0, 0, 0.75);
 @media (min-width: 990px) {
 
   .projectsPageContainer {
+
+    padding: 2% 25%;
+
+    -webkit-box-shadow: inset 0px 10px 19px -4px rgba(0,0,0,0.48),inset 0px -15px 19px -4px rgba(0,0,0,0.48);
+    -moz-box-shadow: inset 0px 10px 19px -4px rgba(0,0,0,0.48),inset 0px -15px 19px -4px rgba(0,0,0,0.48);
+    box-shadow: inset 0px 10px 19px -4px rgba(0,0,0,0.48),inset 0px -15px 19px -4px rgba(0,0,0,0.48);
+
 
     #projectSwitchButton {
       > div:hover {
