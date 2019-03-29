@@ -8,8 +8,17 @@ body {
   
 
   .bodyContain.day_man {
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f4f0f0+0,ede9e9+40,e6dede+100 */
+background: rgb(244,240,240); /* Old browsers */
+background: -moz-linear-gradient(-45deg, rgba(244,240,240,1) 0%, rgba(237,233,233,1) 40%, rgba(230,222,222,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg, rgba(244,240,240,1) 0%,rgba(237,233,233,1) 40%,rgba(230,222,222,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg, rgba(244,240,240,1) 0%,rgba(237,233,233,1) 40%,rgba(230,222,222,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4f0f0', endColorstr='#e6dede',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+   
 
-    background: $shade1;
+
+  padding: 0;
+
     color: $shade5 !important;
 
     svg {
@@ -23,7 +32,15 @@ body {
 
 
     .projectsPageContainer {
-      background: #B4B0B1 !important;
+
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#c8c4c5+0,aaa6a6+40,7e7878+100 */
+background: rgb(200,196,197); /* Old browsers */
+background: -moz-linear-gradient(-45deg, rgba(200,196,197,1) 0%, rgba(170,166,166,1) 40%, rgba(126,120,120,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg, rgba(200,196,197,1) 0%,rgba(170,166,166,1) 40%,rgba(126,120,120,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg, rgba(200,196,197,1) 0%,rgba(170,166,166,1) 40%,rgba(126,120,120,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c8c4c5', endColorstr='#7e7878',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+
     }
         .projectSwitchButton {
           border-bottom: 3px solid $shade5;

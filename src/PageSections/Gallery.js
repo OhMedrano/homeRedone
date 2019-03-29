@@ -52,9 +52,13 @@ class GalleryCarousel {
       if(startCount >= this.state.images.length) {
         console.log('No image exist');
       } else {       
-        let renderImageContainer = makeEle.createEle('div','renderImageContainer_'+(endCount - startCount), [3,6,12,2], 'renderImageContainer');
-        let renderImage = makeEle.createEle('div','renderImage_'+(endCount - startCount), null,'renderImages');
+        let renderImageContainer = makeEle.createEle('div','renderImageContainer_'+(endCount - startCount), null, 'renderImageContainer');
+        let renderImage = makeEle.createEle('img','renderImage_'+(endCount - startCount), null,'renderImages');
+        
+        renderImage.src = currentImage.link;
+/*
         renderImage.style.background = 'url('+currentImage.link+') no-repeat';
+        */
         renderImage.startCount = startCount;
         renderImageContainer.append(renderImage);
         
@@ -219,7 +223,7 @@ function GalleryPage(galleryPics) {
   let galleryTitle = makeEle.createEle('div','galleryTitle',[12,12,12,12],'galleryTitle');
   let loadedState = false; 
   let state = {
-    imageCount: 12,
+    imageCount: 8,
     imageArray: [],
 
   }
